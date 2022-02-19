@@ -9,6 +9,9 @@ step1:
 step2:
 `gcloud container clusters create first`
 
+step3:
+`gcloud container clusters get-credentials first`
+
 ## Building services
 step1:
 `kubectl create deployment first-server --image=flask-change:latest`
