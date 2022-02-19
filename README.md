@@ -3,6 +3,14 @@
 steps of building kubernetes clusters, deployment, and exposure.
 
 ## Building Dockers
+`docker build -t flask-change:latest .`
+
+`docker image ls`
+
+`docker run -p 8080:8080 flask-change`
+
+push to GCR
+
 `docker tag flask-change gcr.io/fastapi-340818/flask-change`
 
 `docker push gcr.io/fastapi-340818/flask-change`
