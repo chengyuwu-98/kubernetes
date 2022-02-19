@@ -31,6 +31,7 @@ describing existing services
 
 ## Delete 
 `kubectl delete deployment first-server`
+
 `gcloud container clusters delete first`
 
 
