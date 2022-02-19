@@ -2,6 +2,10 @@
 
 steps of building kubernetes clusters, deployment, and exposure.
 
+## Building Dockers
+`docker tag flask-change gcr.io/fastapi-340818/flask-change`
+
+`docker push gcr.io/fastapi-340818/flask-change`
 ## Building clusters 
 step1:
 `gcloud config set compute/zone us-central1-a`
