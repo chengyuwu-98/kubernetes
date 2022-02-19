@@ -26,7 +26,7 @@ step3:
 
 ## Building services
 step1:
-`kubectl create deployment first-server --image=flask-change:latest`
+`kubectl create deployment first-server --image=gcr.io/fastapi-340818/flask-change`
 
 step2: 
 `kubectl expose deployment first-server --type=LoadBalancer --port 8080`
