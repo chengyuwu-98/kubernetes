@@ -12,10 +12,10 @@ The web applciatoin lets users to input some values (x,y) and uses sklearn-Linea
 6. Run in kubernetes with Docker hub `./run_kubernetes_hub.sh`
 
 # Tech Used
-Flask
-Container
-Docker hub
-Kubernetes
-Google Kubernetes Engine (GKE)
-Google Container Registry (GCK)
+Flask \
+Container \
+Docker hub \
+Kubernetes \
+Google Kubernetes Engine (GKE) \
+Google Container Registry (GCK) \
 Linear regression 
