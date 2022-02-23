@@ -1,7 +1,7 @@
 # Form Linear Regression 
 
 
-#Running app
+# How to run the app
 1. Directly go to website 
 2. Run in local : `python main.py`
 3. Run in docker: `./run_docker.sh`
