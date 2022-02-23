@@ -8,3 +8,12 @@
 4. Pull image from Docker hub : `docker pull cw4441/linearregression`  `docker run -p 8080:8080 cw4441/linearregression`
 5. Run in kubernetes with GKE `./run_kubernetes_GKE.sh`
 6. Run in kubernetes with Docker hub `./run_kubernetes_hub.sh`
+
+# Tech Used
+Flask
+Container
+Docker hub
+Kubernetes
+Google Kubernetes Engine (GKE)
+Google Container Registry (GCK)
+Linear regression 
