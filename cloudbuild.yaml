@@ -1,19 +1,16 @@
 steps:
- - name: 'gcr.io/cloud-builders/docker'
-   entrypoint: 'bash'
-   args: ['-c', 'docker login --username=$$USERNAME --password=$$PASSWORD']
-   secretEnv: ['USERNAME', 'PASSWORD']
- - name: 'gcr.io/cloud-builders/docker'
-   entrypoint: 'bash'
-   args: ['-c', 'docker build -t $$USERNAME/linearregression']
-   secretEnv: ['USERNAME']
- - name: 'gcr.io/cloud-builders/docker'
-   entrypoint: 'bash'
-   args: ['-c', 'docker push $$USERNAME/REPOSITORY:TAG']
-   secretEnv: ['USERNAME']
-availableSecrets:
-   secretManager:
-   - versionName: projects/595528609850/secrets/docker-password/versions/1
-     env: 'PASSWORD'
-   - versionName: projects/595528609850/secrets/docker-username/versions/1
-     env: 'USERNAME'
+# Build and push image to Google Container Registry (GCR)
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/fastapi-340818/flask-regression', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/fastapi-340818/flask-regression']
+# Automatially update existing kubernetes services
+- name: 'gcr.io/cloud-builders/kubectl' 
+  args: [
+   'rollout', 
+   'restart', 
+   'deployment/first-server'    # first-server the services that has been build before 
+  ]
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=regression' # the cluster that has been build before 

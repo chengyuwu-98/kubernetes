@@ -6,7 +6,7 @@ docker build -t flask-regression:latest .
 # List docker images
 docker image ls
 
-# Push image to Google Container Registry (GCR)
+#Push image to Google Container Registry (GCR) 
 docker tag flask-regression gcr.io/fastapi-340818/flask-regression
 
 docker push gcr.io/fastapi-340818/flask-regression
