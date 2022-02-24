@@ -23,5 +23,5 @@ Docker hub \
 Kubernetes \
 Google Kubernetes Engine (GKE) \
 Google Container Registry (GCK) \
-Google Could Build (Countinous Delivery)
+Google Could Build (Countinous Delivery) \
 Linear regression 
