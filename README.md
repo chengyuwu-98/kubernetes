@@ -1,6 +1,7 @@
 # Form Linear Regression 
 ## Introduction 
-The web applciatoin lets users to input some values (x,y) and uses sklearn-LinearRegression to fit the relationship of these observations. Then it will return a formular of the linear regression y=a*x+b and a graph showing the predicted linear relationship. The application also utilizes containers and kubernetes. Users can pull the container image from docker hub and run in their local environment or use any methods mentioned in the 'How to run the app' section to access the application.
+The web applciatoin lets users to input some values (x,y) and uses sklearn-LinearRegression to fit the relationship of these observations. Then it will return a formular of the linear regression y=a*x+b and a graph showing the predicted linear relationship. The application also utilizes Containers and Kubernetes, and use Cloud Build to automatically trigger the update of Kubernetes. \
+Users can pull the container image from docker hub and run in their local environment or use any methods mentioned in the 'How to run the app' section to access the application.
 
 <img width="468" alt="1645655614" src="https://user-images.githubusercontent.com/76429734/155420569-59eeb38d-3a84-4718-bc69-ebbbd975f8a5.png">
 
@@ -21,4 +22,5 @@ Docker hub \
 Kubernetes \
 Google Kubernetes Engine (GKE) \
 Google Container Registry (GCK) \
+Google Could Build (Countinous Delivery)
 Linear regression 
