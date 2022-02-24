@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# This file used for building kubernetes clusters and services for the first time. After running this
+# file, kubernetes services will be automatically update with cloudbuild.yaml. 
 
 # Build clusters
 gcloud config set compute/zone us-central1-a
