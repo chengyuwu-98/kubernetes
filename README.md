@@ -27,7 +27,7 @@ Google Could Build (Countinous Delivery) \
 Linear regression 
 
 ## Process of building containers and kubernetes
-## kubernetes
+# kubernetes
 
 steps of building kubernetes clusters, deployment, and exposure.
 
