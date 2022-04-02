@@ -9,12 +9,16 @@ Users can pull the container image from docker hub and run in their local enviro
 See the Youtube Demo https://youtu.be/jCdg3o4H7-Q
 
 ## How to run the app
-1. Directly go to website https://fastapi-340818.uc.r.appspot.com
-2. Run in local : `make install` `python main.py`
-3. Run in docker: `./run_docker.sh`
-4. Pull image from Docker hub : `docker pull cw4441/linearregression`  `docker run -p 8080:8080 cw4441/linearregression`
-5. Run in kubernetes with GKE `./run_kubernetes_GKE.sh`
-6. Run in kubernetes with Docker hub `./run_kubernetes_hub.sh`
+### directly went to deployed website
+1. go to website deployed by google cloud app engine https://fastapi-340818.uc.r.appspot.com 
+2. or go to website deployed used kubernetes http://35.223.45.38:8080/
+
+### run the app locally
+3. Run in local : `make install` `python main.py`
+4. Run in docker: `./run_docker.sh`
+5. Pull image from Docker hub : `docker pull cw4441/linearregression`  `docker run -p 8080:8080 cw4441/linearregression`
+6. Run in kubernetes with GKE `./run_kubernetes_GKE.sh`
+7. Run in kubernetes with Docker hub `./run_kubernetes_hub.sh`
 
 ## Tech Used
 Flask \
