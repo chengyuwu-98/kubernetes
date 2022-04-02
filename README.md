@@ -32,17 +32,17 @@ Linear regression
 steps of building kubernetes clusters, deployment, and exposure.
 
 ## Building Dockers
-`docker build -t flask-change:latest .`
+`docker build -t flask-regression:latest .`
 
 `docker image ls`
 
-`docker run -p 8080:8080 flask-change`
+`docker run -p 8080:8080 flask-regression`
 
 push to GCR
 
-`docker tag flask-change gcr.io/fastapi-340818/flask-change`
+`docker tag flask-change gcr.io/fastapi-340818/flask-regression`
 
-`docker push gcr.io/fastapi-340818/flask-change`
+`docker push gcr.io/fastapi-340818/flask-regression`
 ## Building clusters 
 step1:
 `gcloud config set compute/zone us-central1-a`
@@ -55,7 +55,7 @@ step3:
 
 ## Building services
 step1:
-`kubectl create deployment first-server --image=gcr.io/fastapi-340818/flask-change`
+`kubectl create deployment first-server --image=gcr.io/fastapi-340818/flask-regression`
 
 step2: 
 `kubectl expose deployment first-server --type=LoadBalancer --port 8080`
